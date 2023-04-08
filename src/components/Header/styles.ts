@@ -6,7 +6,7 @@ interface MenuProps {
 
 export const HeaderContainer = styled.header`
   background-color: ${(props) => props.theme['black-500']};
-  padding: 2rem 0;
+  padding: 1rem 0;
 `
 
 export const HeaderContent = styled.div`
