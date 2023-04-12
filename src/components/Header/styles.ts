@@ -21,8 +21,10 @@ export const HeaderContent = styled.div`
 `
 
 export const Menu = styled.nav`
+  width: 70%;
   display: flex;
-  margin-left: 20vw;
+  justify-content: flex-end;
+
   gap: 5rem;
 `
 

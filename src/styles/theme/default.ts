@@ -1,7 +1,9 @@
 export const defaultTheme = {
   white: '#fff',
+  'white-opacity': 'rgba(255, 255, 255, 0.5)',
 
   'black-500': '#131313',
+  'black-600-opacity': 'rgba(24, 24, 24, 0.5)',
   'black-800': '#010000',
 
   'gray-100': '#E2E2E2',
@@ -22,4 +24,6 @@ export const defaultTheme = {
   'red-500': '#AB222E',
   'red-700': '#D93232',
   'red-opacy': 'rgba(241,0,0,0.8)',
+
+  'blue-800': '#242938',
 } as const

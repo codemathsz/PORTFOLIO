@@ -18,6 +18,13 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         
     }
+
+    p{
+        ::selection{
+            background: ${(props) => props.theme['gray-600-opacy']};
+            color: ${(props) => props.theme.white};
+        }
+    }
     body, input, textarea, button{
         font:400 1rem Roboto, sans-serif;
     }

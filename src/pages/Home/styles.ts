@@ -1,19 +1,31 @@
 import styled from 'styled-components'
 
 export const MainContainer = styled.main`
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-self: center;
+`
+
+export const AlingContents = styled.div`
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: 60%, 40%;
 `
+
 export const ContentInfo = styled.div`
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6rem 0 0 10rem;
+  padding: 6rem 0 0 0;
   gap: 1rem;
   overflow: auto;
+
+  @media (max-width: 768px) {
+  }
 `
 export const ContentHello = styled.div`
   display: flex;
@@ -80,5 +92,27 @@ export const ContentImg = styled.div`
   img {
     mix-blend-mode: hard-light;
     transform: rotate(-45deg);
+  }
+`
+export const RedesSociais = styled.div`
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 75%;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+`
+export const LinkRedeSociais = styled.a`
+  color: ${(props) => props.theme['gray-600']};
+  transition: color 0.2s;
+
+  &:hover {
+    color: ${(props) => props.theme['gray-600-opacy']};
+    transform: scale(1.2);
   }
 `
